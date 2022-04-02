@@ -1,0 +1,276 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "Mother Board"
+Date "31Dec2021"
+Rev "1"
+Comp "Concept Completion Inc."
+Comment1 ""
+Comment2 "Hoffman Estates, IL 60169"
+Comment3 "Suite 104"
+Comment4 "2155 Stonington Ave."
+$EndDescr
+$Comp
+L Regulator_Linear:TPS70351 U?
+U 1 1 61D0DC96
+P 4100 2000
+F 0 "U?" H 4100 2642 50  0000 C CNN
+F 1 "TPS70351" H 4100 2551 50  0000 C CNN
+F 2 "Package_SO:HTSSOP-24-1EP_4.4x7.8mm_P0.65mm_EP3.4x7.8mm_Mask2.4x4.68mm_ThermalVias" H 4075 2625 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps703.pdf" H 4100 2000 50  0001 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D0F310
+P 2600 2200
+F 0 "C?" H 2692 2246 50  0000 L CNN
+F 1 "0.22uF" H 2692 2155 50  0000 L CNN
+F 2 "" H 2600 2200 50  0001 C CNN
+F 3 "~" H 2600 2200 50  0001 C CNN
+	1    2600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D0F3C5
+P 3100 2200
+F 0 "C?" H 3192 2246 50  0000 L CNN
+F 1 "0.22uF" H 3192 2155 50  0000 L CNN
+F 2 "" H 3100 2200 50  0001 C CNN
+F 3 "~" H 3100 2200 50  0001 C CNN
+	1    3100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D0F721
+P 4900 2600
+F 0 "C?" H 4992 2646 50  0000 L CNN
+F 1 "22uF" H 4992 2555 50  0000 L CNN
+F 2 "" H 4900 2600 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61D0F961
+P 5300 2600
+F 0 "C?" H 5392 2646 50  0000 L CNN
+F 1 "22uF" H 5392 2555 50  0000 L CNN
+F 2 "" H 5300 2600 50  0001 C CNN
+F 3 "~" H 5300 2600 50  0001 C CNN
+	1    5300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 61D133E1
+P 2900 2500
+F 0 "#PWR?" H 2900 2250 50  0001 C CNN
+F 1 "GNDREF" H 2905 2327 50  0001 C CNN
+F 2 "" H 2900 2500 50  0001 C CNN
+F 3 "" H 2900 2500 50  0001 C CNN
+	1    2900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 61D1410F
+P 4000 2800
+F 0 "#PWR?" H 4000 2550 50  0001 C CNN
+F 1 "GNDREF" H 4005 2627 50  0001 C CNN
+F 2 "" H 4000 2800 50  0001 C CNN
+F 3 "" H 4000 2800 50  0001 C CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 61D18EDE
+P 5100 2900
+F 0 "#PWR?" H 5100 2650 50  0001 C CNN
+F 1 "GNDREF" H 5105 2727 50  0001 C CNN
+F 2 "" H 5100 2900 50  0001 C CNN
+F 3 "" H 5100 2900 50  0001 C CNN
+	1    5100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2000 4700 2000
+Wire Wire Line
+	4900 2000 4900 2500
+Wire Wire Line
+	4600 1600 4700 1600
+Wire Wire Line
+	5300 1600 5300 2000
+Wire Wire Line
+	4900 2700 4900 2800
+Wire Wire Line
+	5300 2700 5300 2800
+Wire Wire Line
+	4900 2800 5100 2800
+Wire Wire Line
+	5100 2900 5100 2800
+Connection ~ 5100 2800
+Wire Wire Line
+	5100 2800 5300 2800
+Wire Wire Line
+	4000 2600 4000 2700
+Wire Wire Line
+	4100 2600 4100 2700
+Wire Wire Line
+	4100 2700 4000 2700
+Connection ~ 4000 2700
+Wire Wire Line
+	4000 2700 4000 2800
+Wire Wire Line
+	2600 2300 2600 2400
+Wire Wire Line
+	3100 2300 3100 2400
+Wire Wire Line
+	2600 2400 2900 2400
+Wire Wire Line
+	2900 2500 2900 2400
+Connection ~ 2900 2400
+Wire Wire Line
+	2900 2400 3100 2400
+Wire Wire Line
+	2600 2100 2600 1600
+Wire Wire Line
+	2600 1600 3100 1600
+Wire Wire Line
+	4600 1700 4700 1700
+Wire Wire Line
+	4700 1700 4700 1600
+Connection ~ 4700 1600
+Wire Wire Line
+	4700 1600 5300 1600
+Wire Wire Line
+	4600 2100 4700 2100
+Wire Wire Line
+	4700 2100 4700 2000
+Connection ~ 4700 2000
+Wire Wire Line
+	4700 2000 4900 2000
+Connection ~ 3100 2400
+$Comp
+L power:+1V8 #PWR?
+U 1 1 61D1F53E
+P 4900 1900
+F 0 "#PWR?" H 4900 1750 50  0001 C CNN
+F 1 "+1V8" H 4915 2073 50  0000 C CNN
+F 2 "" H 4900 1900 50  0001 C CNN
+F 3 "" H 4900 1900 50  0001 C CNN
+	1    4900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61D1FB4C
+P 5300 1500
+F 0 "#PWR?" H 5300 1350 50  0001 C CNN
+F 1 "+5V" H 5315 1673 50  0000 C CNN
+F 2 "" H 5300 1500 50  0001 C CNN
+F 3 "" H 5300 1500 50  0001 C CNN
+	1    5300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1500 5300 1600
+Connection ~ 5300 1600
+Wire Wire Line
+	4900 1900 4900 2000
+Connection ~ 4900 2000
+Wire Wire Line
+	3600 1700 3500 1700
+Wire Wire Line
+	3500 1700 3500 1600
+Connection ~ 3500 1600
+Wire Wire Line
+	3500 1600 3600 1600
+Wire Wire Line
+	4600 1800 4800 1800
+Wire Wire Line
+	4800 1800 4800 1200
+Wire Wire Line
+	4800 1200 3400 1200
+Wire Wire Line
+	3400 1200 3400 2100
+Wire Wire Line
+	3400 2100 3600 2100
+Wire Wire Line
+	4600 2400 5400 2400
+$Comp
+L Device:R_Small_US R?
+U 1 1 61D2306C
+P 5400 2200
+F 0 "R?" H 5468 2246 50  0000 L CNN
+F 1 "250K" H 5468 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5400 2200 50  0001 C CNN
+F 3 "~" H 5400 2200 50  0001 C CNN
+	1    5400 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2100 5400 2000
+Wire Wire Line
+	5400 2000 5300 2000
+Connection ~ 5300 2000
+Wire Wire Line
+	5300 2000 5300 2500
+Wire Wire Line
+	5400 2300 5400 2400
+Connection ~ 5400 2400
+Connection ~ 3100 1600
+Wire Wire Line
+	3100 1600 3300 1600
+Connection ~ 2600 1600
+$Comp
+L power:+6V #PWR?
+U 1 1 61D27B66
+P 2400 1500
+F 0 "#PWR?" H 2400 1350 50  0001 C CNN
+F 1 "+6V" H 2415 1673 50  0000 C CNN
+F 2 "" H 2400 1500 50  0001 C CNN
+F 3 "" H 2400 1500 50  0001 C CNN
+	1    2400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1500 2400 1600
+Wire Wire Line
+	3600 2400 3500 2400
+Wire Wire Line
+	3500 2400 3500 2690
+Wire Wire Line
+	3500 2690 1700 2690
+Text HLabel 1700 2690 0    50   Input ~ 0
+PWR_EN_1
+Text GLabel 10000 2400 2    50   Input ~ 0
+PWR_RESET
+Wire Wire Line
+	5400 2400 10000 2400
+Wire Wire Line
+	3600 2300 3400 2300
+Wire Wire Line
+	3400 2300 3400 2400
+Wire Wire Line
+	3100 2400 3400 2400
+Wire Wire Line
+	3100 1600 3100 2100
+Wire Wire Line
+	3600 2000 3300 2000
+Wire Wire Line
+	3300 2000 3300 1600
+Connection ~ 3300 1600
+Wire Wire Line
+	3300 1600 3500 1600
+Wire Wire Line
+	2400 1600 2600 1600
+$EndSCHEMATC
